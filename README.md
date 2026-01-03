@@ -1,3 +1,3 @@
-# Smart Productivity Manager – Phase 1 Complete
+# Smart Productivity Manager [Ongoing]
 Frontend/Backend structure organized.
 Project ready for React conversion & backend integration.
