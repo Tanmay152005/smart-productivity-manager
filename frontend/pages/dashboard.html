@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Task Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <script src="auth-guard.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div class="card" id="taskCard">
+      <div class="card-header">
+        <h1>Smart Productivity Manager</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+        <p class="subtitle">Tap to type or use the mic</p>
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+      <div id="emptyState" class="empty-state">
+        No tasks yet. Add your first one ✨
+      </div>
+
+      <div class="input-wrapper">
+        <input
+          id="taskInput"
+          type="text"
+          placeholder="Type your task here..."
+          autocomplete="off"
+        />
+        <button id="addBtn" class="primary-btn">Add</button>
+      </div>
+    </div>
+
+    <button id="micBtn" class="mic-btn">
+      <span class="mic-inner">
+        🎤
+      </span>
+      <span id="micLabel" class="mic-label">Tap to speak</span>
+    </button>
+
+    <div id="toast" class="toast"></div>
+  </div>
+  <script src="../scripts/auth.js"></script>
+  <script src="../scripts/script.js"></script>
+</body>
+</html>

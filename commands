@@ -1,0 +1,3 @@
+cd backend --> change path to backend
+.\venv\Scripts\Activate.ps1 --> cmd to activate the virtual env. 
+uvicorn main:app --reload --> cmd to run the server 

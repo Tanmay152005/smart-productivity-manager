@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Assistant - Smart Productivity Manager</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <script src="auth-guard.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="dashboard.html" class="back">← Home</a>
+    <h2>AI Assistant (Chat + Voice)</h2>
+  </header>
+
+  <main class="container">
+    <section class="panel chat-panel">
+      <ul id="chatList" class="chat-list"></ul>
+
+      <div class="chat-input">
+        <button id="voiceBtn" type="button" title="Speak your command">🎤</button>
+        <input id="chatInput" placeholder="Speak or type: 'Create a task to study at 5pm' or 'Delete the DSA task'"/>
+        <button id="sendBtn" type="button">Send</button>
+      </div>
+
+      <label class="small">
+        Try: “Create a task to study DSA at 6pm” or “Delete the study DSA task”.
+        Created/deleted tasks will show up on the Tasks page.
+      </label>
+    </section>
+  </main>
+
+  <script src="../scripts/script.js"></script>
+</body>
+</html>

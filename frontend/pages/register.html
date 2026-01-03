@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register – FocusPilot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <script src="../scripts/auth-guard.js" defer></script>
+  <script src="../scripts/auth.js" defer></script>
+</head>
+<body class="auth-body">
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <header class="auth-header">
+        <a href="index.html" class="back-link">← Back</a>
+        <h1>Create your FocusPilot account</h1>
+        <p class="auth-subtitle">Set up your space in a few seconds.</p>
+      </header>
+
+      <form id="registerForm" class="auth-form">
+        <label>
+          Name
+          <input type="text" id="registerName" required placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="registerEmail" required placeholder="you@example.com" />
+        </label>
+        <label>
+          Password
+          <input type="password" id="registerPassword" required minlength="6" placeholder="At least 6 characters" />
+        </label>
+        <button type="submit" class="primary-btn full-width">Create Account</button>
+      </form>
+
+      <p class="auth-switch">
+        Already using FocusPilot?
+        <a href="login.html">Login</a>
+      </p>
+
+      <p id="registerError" class="auth-error" aria-live="polite"></p>
+    </div>
+  </div>
+</body>
+</html>
